@@ -1,13 +1,17 @@
-import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { useState, useCallback } from 'react'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router'
 import { TrophyViewer } from './viewer/TrophyViewer.tsx'
+import { TrophyDetail } from './pages/TrophyDetail.tsx'
 import { SHOWCASE_TROPHIES } from './data/showcase.ts'
 import type { MetalPreset } from './types/index.ts'
 
 function App() {
   const defaultTrophy = SHOWCASE_TROPHIES[0]
-  const [activeModel] = useState<string | null>(defaultTrophy?.modelPath ?? null)
-  const [activePreset] = useState<MetalPreset>(defaultTrophy?.materials.primary ?? 'polishedGold')
+  const [activeModel, setActiveModel] = useState<string | null>(defaultTrophy?.modelPath ?? null)
+  const [activePreset, setActivePreset] = useState<MetalPreset>(defaultTrophy?.materials.primary ?? 'polishedGold')
+
+  const handleModelChange = useCallback((path: string | null) => setActiveModel(path), [])
+  const handlePresetChange = useCallback((preset: MetalPreset) => setActivePreset(preset), [])
 
   return (
     <BrowserRouter>
@@ -16,8 +20,16 @@ function App() {
 
         <div className="dom-overlay">
           <Routes>
-            <Route path="/" element={<div className="phase1-label">Thomas Lyte 3D Gallery</div>} />
-            <Route path="/trophy/:slug" element={<div>Trophy Detail (Phase 3)</div>} />
+            <Route path="/" element={<Navigate to="/trophy/test-trophy" replace />} />
+            <Route
+              path="/trophy/:slug"
+              element={
+                <TrophyDetail
+                  onModelChange={handleModelChange}
+                  onPresetChange={handlePresetChange}
+                />
+              }
+            />
           </Routes>
         </div>
       </div>

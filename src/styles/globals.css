@@ -110,3 +110,49 @@ body,
   font-size: 0.875rem;
   color: var(--text-secondary);
 }
+
+/* Trophy Info Panel */
+.trophy-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  background: linear-gradient(transparent, rgba(13, 13, 15, 0.85) 30%);
+  pointer-events: auto;
+}
+
+.trophy-info-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.trophy-info-details {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.trophy-info-dimensions,
+.trophy-info-material {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.trophy-info-material {
+  color: var(--color-gold);
+}
+
+.trophy-not-found {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
