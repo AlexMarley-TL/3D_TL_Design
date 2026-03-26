@@ -1,7 +1,7 @@
 # Requirements: 3D Trophy Gallery & AR Viewer
 
 **Defined:** 2026-03-26
-**Core Value:** Trophy renders must look convincingly real in-browser — approaching Cinema 4D / Redshift quality with photorealistic polished metal reflections.
+**Core Value:** Trophy renders must look convincingly real in-browser -- approaching Cinema 4D / Redshift quality with photorealistic polished metal reflections.
 
 ## v1 Requirements
 
@@ -60,7 +60,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **UI-01**: Dark luxury theme with CSS custom properties matching Thomas Lyte brand (backgrounds #0d0d0f/#161619/#1e1e22, gold accent #c9a962)
 - [ ] **UI-02**: Playfair Display for headings, Inter for body text (Google Fonts)
-- [ ] **UI-03**: Mobile-first responsive design — primary use case is phone
+- [ ] **UI-03**: Mobile-first responsive design -- primary use case is phone
 - [ ] **UI-04**: Loading spinner or skeleton shown during 3D model loading (React Suspense)
 - [ ] **UI-05**: Back navigation from 3D viewer to gallery or project landing page
 - [ ] **UI-06**: Trophy info panel showing name, dimensions, and materials on the viewer page
@@ -136,41 +136,41 @@ Which phases cover which requirements. Updated during roadmap creation.
 | AR-02 | Phase 2 | Pending |
 | AR-03 | Phase 2 | Pending |
 | AR-04 | Phase 2 | Pending |
-| SHOW-01 | Phase 3 | Pending |
-| SHOW-02 | Phase 3 | Pending |
-| SHOW-03 | Phase 3 | Pending |
-| SHOW-04 | Phase 3 | Pending |
-| PORT-01 | Phase 4 | Pending |
-| PORT-02 | Phase 4 | Pending |
-| PORT-03 | Phase 4 | Pending |
-| PORT-04 | Phase 4 | Pending |
-| PORT-05 | Phase 4 | Pending |
-| PORT-06 | Phase 4 | Pending |
-| PORT-07 | Phase 4 | Pending |
-| PORT-08 | Phase 4 | Pending |
-| PORT-09 | Phase 4 | Pending |
+| SHOW-01 | Phase 2 | Pending |
+| SHOW-02 | Phase 2 | Pending |
+| SHOW-03 | Phase 2 | Pending |
+| SHOW-04 | Phase 2 | Pending |
+| PORT-01 | Phase 3 | Pending |
+| PORT-02 | Phase 3 | Pending |
+| PORT-03 | Phase 3 | Pending |
+| PORT-04 | Phase 3 | Pending |
+| PORT-05 | Phase 3 | Pending |
+| PORT-06 | Phase 3 | Pending |
+| PORT-07 | Phase 3 | Pending |
+| PORT-08 | Phase 3 | Pending |
+| PORT-09 | Phase 3 | Pending |
 | PIPE-01 | Phase 1 | Pending |
 | PIPE-02 | Phase 1 | Pending |
-| PIPE-03 | Phase 5 | Pending |
-| UI-01 | Phase 3 | Pending |
-| UI-02 | Phase 3 | Pending |
-| UI-03 | Phase 3 | Pending |
+| PIPE-03 | Phase 4 | Pending |
+| UI-01 | Phase 2 | Pending |
+| UI-02 | Phase 2 | Pending |
+| UI-03 | Phase 2 | Pending |
 | UI-04 | Phase 1 | Pending |
-| UI-05 | Phase 3 | Pending |
+| UI-05 | Phase 2 | Pending |
 | UI-06 | Phase 1 | Pending |
 | INFRA-01 | Phase 1 | Pending |
-| INFRA-02 | Phase 5 | Pending |
-| INFRA-03 | Phase 5 | Pending |
-| INFRA-04 | Phase 6 | Pending |
-| QR-01 | Phase 5 | Pending |
-| QR-02 | Phase 5 | Pending |
-| QR-03 | Phase 3 | Pending |
+| INFRA-02 | Phase 4 | Pending |
+| INFRA-03 | Phase 4 | Pending |
+| INFRA-04 | Phase 4 | Pending |
+| QR-01 | Phase 4 | Pending |
+| QR-02 | Phase 4 | Pending |
+| QR-03 | Phase 2 | Pending |
 
 **Coverage:**
 - v1 requirements: 43 total
 - Mapped to phases: 43
-- Unmapped: 0 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-26*
-*Last updated: 2026-03-26 after initial definition*
+*Last updated: 2026-03-26 after roadmap creation (4-phase coarse structure)*
