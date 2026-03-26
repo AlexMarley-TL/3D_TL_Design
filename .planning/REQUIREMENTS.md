@@ -9,7 +9,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Rendering
 
-- [ ] **RNDR-01**: Trophy models render with photorealistic polished metal appearance (gold, silver, chrome, rose gold) using MeshPhysicalMaterial with metalness: 1
+- [x] **RNDR-01**: Trophy models render with photorealistic polished metal appearance (gold, silver, chrome, rose gold) using MeshPhysicalMaterial with metalness: 1
 - [ ] **RNDR-02**: HDRI studio environment lighting produces professional photography-quality reflections on metal surfaces
 - [ ] **RNDR-03**: ACES Filmic tone mapping applied correctly (single pass, no double tone mapping)
 - [ ] **RNDR-04**: Bloom post-processing makes specular highlights pop on polished metals
@@ -52,8 +52,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content Pipeline
 
-- [ ] **PIPE-01**: System accepts .glb files exported from Cinema 4D placed in /public/models/
-- [ ] **PIPE-02**: Trophy metadata (name, dimensions, materials, paths) stored in static TypeScript data files
+- [x] **PIPE-01**: System accepts .glb files exported from Cinema 4D placed in /public/models/
+- [x] **PIPE-02**: Trophy metadata (name, dimensions, materials, paths) stored in static TypeScript data files
 - [ ] **PIPE-03**: .glb files support Draco compression for production (< 5 MB per trophy)
 
 ### UI & Theme
@@ -67,7 +67,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Infrastructure
 
-- [ ] **INFRA-01**: .gitattributes configured for binary files (.glb, .hdr, .usdz) before first binary commit
+- [x] **INFRA-01**: .gitattributes configured for binary files (.glb, .hdr, .usdz) before first binary commit
 - [ ] **INFRA-02**: Initial page load < 3 seconds on 4G mobile connection
 - [ ] **INFRA-03**: JS bundle < 500 KB gzipped
 - [ ] **INFRA-04**: Deployable to Vercel as a static site (React + Vite build)
@@ -121,7 +121,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| RNDR-01 | Phase 1 | Pending |
+| RNDR-01 | Phase 1 | Complete |
 | RNDR-02 | Phase 1 | Pending |
 | RNDR-03 | Phase 1 | Pending |
 | RNDR-04 | Phase 1 | Pending |
@@ -149,8 +149,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PORT-07 | Phase 3 | Pending |
 | PORT-08 | Phase 3 | Pending |
 | PORT-09 | Phase 3 | Pending |
-| PIPE-01 | Phase 1 | Pending |
-| PIPE-02 | Phase 1 | Pending |
+| PIPE-01 | Phase 1 | Complete |
+| PIPE-02 | Phase 1 | Complete |
 | PIPE-03 | Phase 4 | Pending |
 | UI-01 | Phase 2 | Pending |
 | UI-02 | Phase 2 | Pending |
@@ -158,7 +158,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UI-04 | Phase 1 | Pending |
 | UI-05 | Phase 2 | Pending |
 | UI-06 | Phase 1 | Pending |
-| INFRA-01 | Phase 1 | Pending |
+| INFRA-01 | Phase 1 | Complete |
 | INFRA-02 | Phase 4 | Pending |
 | INFRA-03 | Phase 4 | Pending |
 | INFRA-04 | Phase 4 | Pending |
