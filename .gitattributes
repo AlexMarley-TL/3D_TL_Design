@@ -1,0 +1,13 @@
+# Prevent Git from corrupting binary 3D assets
+*.glb binary
+*.gltf binary
+*.hdr binary
+*.exr binary
+*.usdz binary
+*.wasm binary
+
+# Image assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
