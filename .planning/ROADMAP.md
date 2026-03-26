@@ -29,11 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Trophy auto-rotates when untouched and stops immediately on user interaction
   4. Navigating away from the viewer and back does not crash the browser or produce WebGL errors (persistent Canvas verified with 10+ navigations on Safari)
   5. A loading spinner appears while the .glb model loads, replaced by the rendered trophy when ready
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md -- Scaffold project, .gitattributes, types, metal presets, static data, CSS theme
+- [ ] 01-02-PLAN.md -- Core 3D rendering pipeline: TrophyModel, TrophyScene, TrophyViewer, persistent Canvas, loading states
+- [ ] 01-03-PLAN.md -- Trophy info panel, TrophyDetail page, phone rendering quality verification
 
 ### Phase 2: Public Gallery & AR
 **Goal**: Users can browse a public gallery of trophies, view any trophy in photorealistic 3D, and project it life-size onto a real surface via AR on their phone
@@ -91,7 +92,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Render Quality & 3D Viewer Foundation | 0/0 | Not started | - |
+| 1. Render Quality & 3D Viewer Foundation | 0/3 | Planning complete | - |
 | 2. Public Gallery & AR | 0/0 | Not started | - |
 | 3. Client Portal | 0/0 | Not started | - |
 | 4. Production & Deploy | 0/0 | Not started | - |
