@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md -- Scaffold project, .gitattributes, types, metal presets, static data, CSS theme
-- [ ] 01-02-PLAN.md -- Core 3D rendering pipeline: TrophyModel, TrophyScene, TrophyViewer, persistent Canvas, loading states
+- [x] 01-02-PLAN.md -- Core 3D rendering pipeline: TrophyModel, TrophyScene, TrophyViewer, persistent Canvas, loading states
 - [ ] 01-03-PLAN.md -- Trophy info panel, TrophyDetail page, phone rendering quality verification
 
 ### Phase 2: Public Gallery & AR

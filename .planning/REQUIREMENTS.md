@@ -10,19 +10,19 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Rendering
 
 - [x] **RNDR-01**: Trophy models render with photorealistic polished metal appearance (gold, silver, chrome, rose gold) using MeshPhysicalMaterial with metalness: 1
-- [ ] **RNDR-02**: HDRI studio environment lighting produces professional photography-quality reflections on metal surfaces
-- [ ] **RNDR-03**: ACES Filmic tone mapping applied correctly (single pass, no double tone mapping)
-- [ ] **RNDR-04**: Bloom post-processing makes specular highlights pop on polished metals
-- [ ] **RNDR-05**: Contact shadows ground the trophy in 3D space (not floating)
-- [ ] **RNDR-06**: Renderer capped at 2x pixel ratio for mobile performance
-- [ ] **RNDR-07**: 60 FPS maintained on modern phones (iPhone 13+, Samsung S21+)
+- [x] **RNDR-02**: HDRI studio environment lighting produces professional photography-quality reflections on metal surfaces
+- [x] **RNDR-03**: ACES Filmic tone mapping applied correctly (single pass, no double tone mapping)
+- [x] **RNDR-04**: Bloom post-processing makes specular highlights pop on polished metals
+- [x] **RNDR-05**: Contact shadows ground the trophy in 3D space (not floating)
+- [x] **RNDR-06**: Renderer capped at 2x pixel ratio for mobile performance
+- [x] **RNDR-07**: 60 FPS maintained on modern phones (iPhone 13+, Samsung S21+)
 
 ### 3D Viewer
 
-- [ ] **VIEW-01**: User can rotate, zoom, and pan the trophy with touch and mouse controls (OrbitControls)
-- [ ] **VIEW-02**: Trophy auto-rotates on idle; rotation stops on user interaction
-- [ ] **VIEW-03**: Canvas persists across route changes (no mount/unmount to avoid Safari WebGL context exhaustion)
-- [ ] **VIEW-04**: Trophy .glb models load via useGLTF with Draco decompression support
+- [x] **VIEW-01**: User can rotate, zoom, and pan the trophy with touch and mouse controls (OrbitControls)
+- [x] **VIEW-02**: Trophy auto-rotates on idle; rotation stops on user interaction
+- [x] **VIEW-03**: Canvas persists across route changes (no mount/unmount to avoid Safari WebGL context exhaustion)
+- [x] **VIEW-04**: Trophy .glb models load via useGLTF with Draco decompression support
 
 ### AR Experience
 
@@ -61,7 +61,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **UI-01**: Dark luxury theme with CSS custom properties matching Thomas Lyte brand (backgrounds #0d0d0f/#161619/#1e1e22, gold accent #c9a962)
 - [ ] **UI-02**: Playfair Display for headings, Inter for body text (Google Fonts)
 - [ ] **UI-03**: Mobile-first responsive design -- primary use case is phone
-- [ ] **UI-04**: Loading spinner or skeleton shown during 3D model loading (React Suspense)
+- [x] **UI-04**: Loading spinner or skeleton shown during 3D model loading (React Suspense)
 - [ ] **UI-05**: Back navigation from 3D viewer to gallery or project landing page
 - [ ] **UI-06**: Trophy info panel showing name, dimensions, and materials on the viewer page
 
@@ -122,16 +122,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | RNDR-01 | Phase 1 | Complete |
-| RNDR-02 | Phase 1 | Pending |
-| RNDR-03 | Phase 1 | Pending |
-| RNDR-04 | Phase 1 | Pending |
-| RNDR-05 | Phase 1 | Pending |
-| RNDR-06 | Phase 1 | Pending |
-| RNDR-07 | Phase 1 | Pending |
-| VIEW-01 | Phase 1 | Pending |
-| VIEW-02 | Phase 1 | Pending |
-| VIEW-03 | Phase 1 | Pending |
-| VIEW-04 | Phase 1 | Pending |
+| RNDR-02 | Phase 1 | Complete |
+| RNDR-03 | Phase 1 | Complete |
+| RNDR-04 | Phase 1 | Complete |
+| RNDR-05 | Phase 1 | Complete |
+| RNDR-06 | Phase 1 | Complete |
+| RNDR-07 | Phase 1 | Complete |
+| VIEW-01 | Phase 1 | Complete |
+| VIEW-02 | Phase 1 | Complete |
+| VIEW-03 | Phase 1 | Complete |
+| VIEW-04 | Phase 1 | Complete |
 | AR-01 | Phase 2 | Pending |
 | AR-02 | Phase 2 | Pending |
 | AR-03 | Phase 2 | Pending |
@@ -155,7 +155,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UI-01 | Phase 2 | Pending |
 | UI-02 | Phase 2 | Pending |
 | UI-03 | Phase 2 | Pending |
-| UI-04 | Phase 1 | Pending |
+| UI-04 | Phase 1 | Complete |
 | UI-05 | Phase 2 | Pending |
 | UI-06 | Phase 1 | Pending |
 | INFRA-01 | Phase 1 | Complete |
