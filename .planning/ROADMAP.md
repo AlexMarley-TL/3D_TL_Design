@@ -46,12 +46,12 @@ Plans:
   3. Tapping "View in AR" on an iPhone launches Apple Quick Look with the trophy at life-size; on Android launches WebXR or Scene Viewer
   4. AR button is hidden on desktop browsers where AR is not available
   5. Every trophy has a unique shareable URL that works when shared via text or email, and back navigation returns to the gallery
-**Plans**: TBD
+**Plans**: 2 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md -- Public gallery page with responsive trophy cards, Google Fonts, dark luxury theme, routing and back navigation
+- [ ] 02-02-PLAN.md -- Cross-platform AR via model-viewer (iPhone Quick Look + Android WebXR), phone verification checkpoint
 
 ### Phase 3: Client Portal
 **Goal**: Clients scan a QR code, enter a 4-digit passcode, and browse their project's design options and iterations in 3D with AR
@@ -92,7 +92,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Render Quality & 3D Viewer Foundation | 0/3 | Planning complete | - |
-| 2. Public Gallery & AR | 0/0 | Not started | - |
+| 1. Render Quality & 3D Viewer Foundation | 3/3 | Planning complete | - |
+| 2. Public Gallery & AR | 0/2 | Planning complete | - |
 | 3. Client Portal | 0/0 | Not started | - |
 | 4. Production & Deploy | 0/0 | Not started | - |
