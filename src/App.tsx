@@ -1,12 +1,13 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import { TrophyViewer } from './viewer/TrophyViewer.tsx'
-import { TrophyDetail } from './pages/TrophyDetail.tsx'
-import { PublicGallery } from './pages/PublicGallery.tsx'
-import { ClientPortal } from './pages/ClientPortal.tsx'
-import { IterationDetail } from './pages/IterationDetail.tsx'
 import { SHOWCASE_TROPHIES } from './data/showcase.ts'
 import type { MetalPreset } from './types/index.ts'
+
+const PublicGallery = lazy(() => import('./pages/PublicGallery.tsx').then(m => ({ default: m.PublicGallery })))
+const TrophyDetail = lazy(() => import('./pages/TrophyDetail.tsx').then(m => ({ default: m.TrophyDetail })))
+const ClientPortal = lazy(() => import('./pages/ClientPortal.tsx').then(m => ({ default: m.ClientPortal })))
+const IterationDetail = lazy(() => import('./pages/IterationDetail.tsx').then(m => ({ default: m.IterationDetail })))
 
 function App() {
   const defaultTrophy = SHOWCASE_TROPHIES[0]
@@ -24,30 +25,32 @@ function App() {
         <TrophyViewer modelPath={activeModel} metalPreset={activePreset} useOriginalMaterials={useOriginalMaterials} />
 
         <div className="dom-overlay">
-          <Routes>
-            <Route path="/" element={<PublicGallery onModelChange={handleModelChange} />} />
-            <Route
-              path="/trophy/:slug"
-              element={
-                <TrophyDetail
-                  onModelChange={handleModelChange}
-                  onPresetChange={handlePresetChange}
-                  onOriginalMaterialsChange={handleOriginalMaterialsChange}
-                />
-              }
-            />
-            <Route
-              path="/project/:code/:slug"
-              element={
-                <IterationDetail
-                  onModelChange={handleModelChange}
-                  onPresetChange={handlePresetChange}
-                  onOriginalMaterialsChange={handleOriginalMaterialsChange}
-                />
-              }
-            />
-            <Route path="/project/:code" element={<ClientPortal onModelChange={handleModelChange} />} />
-          </Routes>
+          <Suspense fallback={<div className="loading-overlay"><div className="loading-spinner" /></div>}>
+            <Routes>
+              <Route path="/" element={<PublicGallery onModelChange={handleModelChange} />} />
+              <Route
+                path="/trophy/:slug"
+                element={
+                  <TrophyDetail
+                    onModelChange={handleModelChange}
+                    onPresetChange={handlePresetChange}
+                    onOriginalMaterialsChange={handleOriginalMaterialsChange}
+                  />
+                }
+              />
+              <Route
+                path="/project/:code/:slug"
+                element={
+                  <IterationDetail
+                    onModelChange={handleModelChange}
+                    onPresetChange={handlePresetChange}
+                    onOriginalMaterialsChange={handleOriginalMaterialsChange}
+                  />
+                }
+              />
+              <Route path="/project/:code" element={<ClientPortal onModelChange={handleModelChange} />} />
+            </Routes>
+          </Suspense>
         </div>
       </div>
     </BrowserRouter>

@@ -1,8 +1,9 @@
 import { Canvas } from '@react-three/fiber'
-import { Suspense } from 'react'
-import { TrophyScene } from './TrophyScene.tsx'
+import { Suspense, lazy } from 'react'
 import { LoadingOverlay } from '../components/LoadingSpinner.tsx'
 import type { MetalPreset } from '../types/index.ts'
+
+const TrophyScene = lazy(() => import('./TrophyScene.tsx').then(m => ({ default: m.TrophyScene })))
 
 interface TrophyViewerProps {
   modelPath: string | null

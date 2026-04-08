@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from 'react'
-import '@google/model-viewer'
 
 interface ARButtonProps {
   modelPath: string
@@ -9,8 +8,16 @@ interface ARButtonProps {
 export function ARButton({ modelPath, usdzPath }: ARButtonProps) {
   const modelViewerRef = useRef<HTMLElement>(null)
   const [arAvailable, setArAvailable] = useState(false)
+  const [modelViewerLoaded, setModelViewerLoaded] = useState(false)
 
   useEffect(() => {
+    import('@google/model-viewer')
+      .then(() => setModelViewerLoaded(true))
+      .catch(() => {})
+  }, [])
+
+  useEffect(() => {
+    if (!modelViewerLoaded) return
     const el = modelViewerRef.current
     if (!el) return
 
@@ -21,7 +28,7 @@ export function ARButton({ modelPath, usdzPath }: ARButtonProps) {
     el.addEventListener('load', checkAR)
     checkAR()
     return () => el.removeEventListener('load', checkAR)
-  }, [modelPath])
+  }, [modelPath, modelViewerLoaded])
 
   const handleARClick = () => {
     const el = modelViewerRef.current as any
