@@ -83,7 +83,7 @@ Plans:
 
 Plans:
 - [x] 04-01-PLAN.md -- Bundle optimization (code-split model-viewer, lazy-load routes) and Draco compression script
-- [ ] 04-02-PLAN.md -- QR code generation script and PNG/SVG output for all client projects
+- [x] 04-02-PLAN.md -- QR code generation script and PNG/SVG output for all client projects
 - [ ] 04-03-PLAN.md -- Production build verification and live Vercel deployment checkpoint
 
 ## Progress

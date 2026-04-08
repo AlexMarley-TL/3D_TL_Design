@@ -74,8 +74,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### QR & Sharing
 
-- [ ] **QR-01**: Each client project has a generated QR code encoding the project URL
-- [ ] **QR-02**: QR code exportable as PNG/SVG for embedding in PDF decks
+- [x] **QR-01**: Each client project has a generated QR code encoding the project URL
+- [x] **QR-02**: QR code exportable as PNG/SVG for embedding in PDF decks
 - [x] **QR-03**: Each trophy and project iteration has a unique shareable URL
 
 ## v2 Requirements
@@ -162,8 +162,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-02 | Phase 4 | Pending |
 | INFRA-03 | Phase 4 | Complete |
 | INFRA-04 | Phase 4 | Pending |
-| QR-01 | Phase 4 | Pending |
-| QR-02 | Phase 4 | Pending |
+| QR-01 | Phase 4 | Complete |
+| QR-02 | Phase 4 | Complete |
 | QR-03 | Phase 2 | Complete |
 
 **Coverage:**
