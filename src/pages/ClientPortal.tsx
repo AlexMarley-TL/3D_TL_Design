@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import { getProjectByCode } from '../data/projects.ts'
 import { PasscodeEntry } from '../components/PasscodeEntry.tsx'
+import { DesignOption } from '../components/DesignOption.tsx'
 
 interface ClientPortalProps {
   onModelChange: (path: string | null) => void
@@ -51,8 +52,10 @@ export function ClientPortal({ onModelChange }: ClientPortalProps) {
           {project.designOptions.length} Design Option{project.designOptions.length !== 1 ? 's' : ''}
         </p>
       </header>
-      <div className="portal-placeholder">
-        Design options will appear here
+      <div className="portal-options">
+        {project.designOptions.map((option) => (
+          <DesignOption key={option.slug} option={option} projectCode={project.code} />
+        ))}
       </div>
     </div>
   )
