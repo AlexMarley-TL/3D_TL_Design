@@ -276,3 +276,31 @@ body,
 .back-link:hover {
   color: var(--color-gold);
 }
+
+/* AR Button */
+.ar-button {
+  position: absolute;
+  bottom: 100px;
+  right: 24px;
+  padding: 12px 24px;
+  background: var(--color-gold);
+  color: var(--bg-primary);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 3;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.ar-button:hover {
+  background: var(--color-gold-light);
+  transform: translateY(-2px);
+}
+
+.ar-button:active {
+  transform: translateY(0);
+}

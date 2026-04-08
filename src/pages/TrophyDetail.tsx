@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useParams, Link } from 'react-router'
 import { SHOWCASE_TROPHIES } from '../data/showcase.ts'
 import { TrophyInfo } from '../components/TrophyInfo.tsx'
+import { ARButton } from '../components/ARButton.tsx'
 import type { MetalPreset } from '../types/index.ts'
 
 interface TrophyDetailProps {
@@ -31,6 +32,7 @@ export function TrophyDetail({ onModelChange, onPresetChange, onOriginalMaterial
     <>
       <Link to="/" className="back-link">&larr; Back to Gallery</Link>
       <TrophyInfo trophy={trophy} />
+      <ARButton modelPath={trophy.modelPath} usdzPath={trophy.usdzPath} />
     </>
   )
 }
