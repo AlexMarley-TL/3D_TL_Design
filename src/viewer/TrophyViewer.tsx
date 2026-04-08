@@ -7,9 +7,10 @@ import type { MetalPreset } from '../types/index.ts'
 interface TrophyViewerProps {
   modelPath: string | null
   metalPreset: MetalPreset
+  useOriginalMaterials?: boolean
 }
 
-export function TrophyViewer({ modelPath, metalPreset }: TrophyViewerProps) {
+export function TrophyViewer({ modelPath, metalPreset, useOriginalMaterials }: TrophyViewerProps) {
   return (
     <div className="trophy-viewer">
       <Canvas
@@ -20,7 +21,7 @@ export function TrophyViewer({ modelPath, metalPreset }: TrophyViewerProps) {
       >
         <Suspense fallback={null}>
           {modelPath && (
-            <TrophyScene modelPath={modelPath} metalPreset={metalPreset} />
+            <TrophyScene modelPath={modelPath} metalPreset={metalPreset} useOriginalMaterials={useOriginalMaterials} />
           )}
         </Suspense>
       </Canvas>

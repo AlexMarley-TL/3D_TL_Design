@@ -9,14 +9,16 @@ function App() {
   const defaultTrophy = SHOWCASE_TROPHIES[0]
   const [activeModel, setActiveModel] = useState<string | null>(defaultTrophy?.modelPath ?? null)
   const [activePreset, setActivePreset] = useState<MetalPreset>(defaultTrophy?.materials.primary ?? 'polishedGold')
+  const [useOriginalMaterials, setUseOriginalMaterials] = useState(defaultTrophy?.useOriginalMaterials ?? false)
 
   const handleModelChange = useCallback((path: string | null) => setActiveModel(path), [])
   const handlePresetChange = useCallback((preset: MetalPreset) => setActivePreset(preset), [])
+  const handleOriginalMaterialsChange = useCallback((value: boolean) => setUseOriginalMaterials(value), [])
 
   return (
     <BrowserRouter>
       <div className="app-layout">
-        <TrophyViewer modelPath={activeModel} metalPreset={activePreset} />
+        <TrophyViewer modelPath={activeModel} metalPreset={activePreset} useOriginalMaterials={useOriginalMaterials} />
 
         <div className="dom-overlay">
           <Routes>
@@ -27,6 +29,7 @@ function App() {
                 <TrophyDetail
                   onModelChange={handleModelChange}
                   onPresetChange={handlePresetChange}
+                  onOriginalMaterialsChange={handleOriginalMaterialsChange}
                 />
               }
             />

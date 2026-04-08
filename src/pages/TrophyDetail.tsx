@@ -7,9 +7,10 @@ import type { MetalPreset } from '../types/index.ts'
 interface TrophyDetailProps {
   onModelChange: (modelPath: string | null) => void
   onPresetChange: (preset: MetalPreset) => void
+  onOriginalMaterialsChange: (value: boolean) => void
 }
 
-export function TrophyDetail({ onModelChange, onPresetChange }: TrophyDetailProps) {
+export function TrophyDetail({ onModelChange, onPresetChange, onOriginalMaterialsChange }: TrophyDetailProps) {
   const { slug } = useParams<{ slug: string }>()
   const trophy = SHOWCASE_TROPHIES.find((t) => t.slug === slug)
 
@@ -17,9 +18,10 @@ export function TrophyDetail({ onModelChange, onPresetChange }: TrophyDetailProp
     if (trophy) {
       onModelChange(trophy.modelPath)
       onPresetChange(trophy.materials.primary)
+      onOriginalMaterialsChange(trophy.useOriginalMaterials ?? false)
     }
     return () => { onModelChange(null) }
-  }, [trophy, onModelChange, onPresetChange])
+  }, [trophy, onModelChange, onPresetChange, onOriginalMaterialsChange])
 
   if (!trophy) {
     return <div className="trophy-not-found">Trophy not found</div>

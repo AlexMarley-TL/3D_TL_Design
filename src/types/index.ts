@@ -12,6 +12,7 @@ export interface PublicTrophy {
   thumbnailPath: string
   dimensions: { heightMm: number; widthMm: number; depthMm: number }
   materials: { primary: MetalPreset; secondary?: MetalPreset }
+  useOriginalMaterials?: boolean
 }
 
 export interface ClientProject {

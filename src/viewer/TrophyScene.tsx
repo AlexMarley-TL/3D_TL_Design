@@ -7,9 +7,10 @@ import type { MetalPreset } from '../types/index.ts'
 interface TrophySceneProps {
   modelPath: string
   metalPreset: MetalPreset
+  useOriginalMaterials?: boolean
 }
 
-export function TrophyScene({ modelPath, metalPreset }: TrophySceneProps) {
+export function TrophyScene({ modelPath, metalPreset, useOriginalMaterials }: TrophySceneProps) {
   return (
     <>
       <Environment files="/hdri/studio_small_09_2k.hdr" />
@@ -25,7 +26,7 @@ export function TrophyScene({ modelPath, metalPreset }: TrophySceneProps) {
       />
 
       <Center>
-        <TrophyModel path={modelPath} preset={metalPreset} />
+        <TrophyModel path={modelPath} preset={metalPreset} useOriginalMaterials={useOriginalMaterials} />
       </Center>
 
       <OrbitControls
