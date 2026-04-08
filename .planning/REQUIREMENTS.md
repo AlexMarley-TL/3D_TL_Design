@@ -54,7 +54,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **PIPE-01**: System accepts .glb files exported from Cinema 4D placed in /public/models/
 - [x] **PIPE-02**: Trophy metadata (name, dimensions, materials, paths) stored in static TypeScript data files
-- [ ] **PIPE-03**: .glb files support Draco compression for production (< 5 MB per trophy)
+- [x] **PIPE-03**: .glb files support Draco compression for production (< 5 MB per trophy)
 
 ### UI & Theme
 
@@ -69,7 +69,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **INFRA-01**: .gitattributes configured for binary files (.glb, .hdr, .usdz) before first binary commit
 - [ ] **INFRA-02**: Initial page load < 3 seconds on 4G mobile connection
-- [ ] **INFRA-03**: JS bundle < 500 KB gzipped
+- [x] **INFRA-03**: JS bundle < 500 KB gzipped
 - [ ] **INFRA-04**: Deployable to Vercel as a static site (React + Vite build)
 
 ### QR & Sharing
@@ -151,7 +151,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PORT-09 | Phase 3 | Complete |
 | PIPE-01 | Phase 1 | Complete |
 | PIPE-02 | Phase 1 | Complete |
-| PIPE-03 | Phase 4 | Pending |
+| PIPE-03 | Phase 4 | Complete |
 | UI-01 | Phase 2 | Complete |
 | UI-02 | Phase 2 | Complete |
 | UI-03 | Phase 2 | Complete |
@@ -160,7 +160,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UI-06 | Phase 1 | Complete |
 | INFRA-01 | Phase 1 | Complete |
 | INFRA-02 | Phase 4 | Pending |
-| INFRA-03 | Phase 4 | Pending |
+| INFRA-03 | Phase 4 | Complete |
 | INFRA-04 | Phase 4 | Pending |
 | QR-01 | Phase 4 | Pending |
 | QR-02 | Phase 4 | Pending |

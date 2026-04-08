@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Completed 03-02-PLAN.md
-last_updated: "2026-04-08T15:00:47.216Z"
+status: executing
+stopped_at: Completed 04-01-PLAN.md
+last_updated: "2026-04-08T15:13:30.138Z"
 last_activity: 2026-04-08
 progress:
   total_phases: 4
   completed_phases: 3
-  total_plans: 7
-  completed_plans: 7
+  total_plans: 10
+  completed_plans: 8
   percent: 33
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-26)
 
 **Core value:** Trophy renders must look convincingly real in-browser -- approaching Cinema 4D / Redshift quality with photorealistic polished metal reflections.
-**Current focus:** Phase 03 — client-portal
+**Current focus:** Phase 04 — production-deploy
 
 ## Current Position
 
-Phase: 04
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 04 (production-deploy) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-04-08
 
 Progress: [███░░░░░░░] 33%
@@ -58,6 +58,7 @@ Progress: [███░░░░░░░] 33%
 | Phase 02-public-gallery-ar P02 | 4min | 2 tasks | 6 files |
 | Phase 03-client-portal P01 | 3min | 3 tasks | 6 files |
 | Phase 03-client-portal P02 | 3min | 2 tasks | 5 files |
+| Phase 04-production-deploy P01 | 9min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -84,6 +85,9 @@ Recent decisions affecting current work:
 - [Phase 03-client-portal]: Portal page uses opaque background covering persistent Canvas (same pattern as gallery)
 - [Phase 03-client-portal]: Inline iteration info panel (not reusing TrophyInfo) because Iteration has different shape than PublicTrophy
 - [Phase 03-client-portal]: CSS max-height transition for accordion animation -- no JS animation library needed
+- [Phase 04-01]: Used Rolldown manualChunks function form (Vite 8 Rolldown requires function, not Rollup object map)
+- [Phase 04-01]: Lazy-loaded TrophyScene inside TrophyViewer to defer postprocessing/drei from initial load (377 KB vs 507 KB)
+- [Phase 04-01]: model-viewer dynamic import with loaded state tracking in ARButton useEffect
 
 ### Pending Todos
 
@@ -98,6 +102,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-08T14:55:45.667Z
-Stopped at: Completed 03-02-PLAN.md
+Last session: 2026-04-08T15:13:30.125Z
+Stopped at: Completed 04-01-PLAN.md
 Resume file: None
