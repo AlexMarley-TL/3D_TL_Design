@@ -51,7 +51,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md -- Public gallery page with responsive trophy cards, Google Fonts, dark luxury theme, routing and back navigation
-- [ ] 02-02-PLAN.md -- Cross-platform AR via model-viewer (iPhone Quick Look + Android WebXR), phone verification checkpoint
+- [x] 02-02-PLAN.md -- Cross-platform AR via model-viewer (iPhone Quick Look + Android WebXR), phone verification checkpoint
 
 ### Phase 3: Client Portal
 **Goal**: Clients scan a QR code, enter a 4-digit passcode, and browse their project's design options and iterations in 3D with AR

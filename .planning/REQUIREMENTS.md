@@ -26,10 +26,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### AR Experience
 
-- [ ] **AR-01**: User can tap "View in AR" to project trophy life-size onto a real surface
-- [ ] **AR-02**: AR works on iPhone (Safari) via Apple Quick Look / USDZ through model-viewer
-- [ ] **AR-03**: AR works on Android (Chrome) via WebXR / Scene Viewer through model-viewer
-- [ ] **AR-04**: AR button hidden on desktop (no AR capability)
+- [x] **AR-01**: User can tap "View in AR" to project trophy life-size onto a real surface
+- [x] **AR-02**: AR works on iPhone (Safari) via Apple Quick Look / USDZ through model-viewer
+- [x] **AR-03**: AR works on Android (Chrome) via WebXR / Scene Viewer through model-viewer
+- [x] **AR-04**: AR button hidden on desktop (no AR capability)
 
 ### Public Showcase
 
@@ -132,10 +132,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | VIEW-02 | Phase 1 | Complete |
 | VIEW-03 | Phase 1 | Complete |
 | VIEW-04 | Phase 1 | Complete |
-| AR-01 | Phase 2 | Pending |
-| AR-02 | Phase 2 | Pending |
-| AR-03 | Phase 2 | Pending |
-| AR-04 | Phase 2 | Pending |
+| AR-01 | Phase 2 | Complete |
+| AR-02 | Phase 2 | Complete |
+| AR-03 | Phase 2 | Complete |
+| AR-04 | Phase 2 | Complete |
 | SHOW-01 | Phase 2 | Complete |
 | SHOW-02 | Phase 2 | Complete |
 | SHOW-03 | Phase 2 | Complete |
