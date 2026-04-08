@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import { TrophyViewer } from './viewer/TrophyViewer.tsx'
 import { TrophyDetail } from './pages/TrophyDetail.tsx'
 import { PublicGallery } from './pages/PublicGallery.tsx'
+import { ClientPortal } from './pages/ClientPortal.tsx'
 import { SHOWCASE_TROPHIES } from './data/showcase.ts'
 import type { MetalPreset } from './types/index.ts'
 
@@ -34,6 +35,7 @@ function App() {
                 />
               }
             />
+            <Route path="/project/:code" element={<ClientPortal onModelChange={handleModelChange} />} />
           </Routes>
         </div>
       </div>
