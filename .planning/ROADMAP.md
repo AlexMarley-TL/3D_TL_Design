@@ -79,11 +79,12 @@ Plans:
   2. Initial page load completes in under 3 seconds on a 4G mobile connection and JS bundle is under 500 KB gzipped
   3. Each client project has a generated QR code (PNG and SVG) that, when scanned on a phone, opens the correct project URL
   4. The site is live on Vercel at a production URL and serves all routes, models, and HDRI assets correctly
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md -- Bundle optimization (code-split model-viewer, lazy-load routes) and Draco compression script
+- [ ] 04-02-PLAN.md -- QR code generation script and PNG/SVG output for all client projects
+- [ ] 04-03-PLAN.md -- Production build verification and live Vercel deployment checkpoint
 
 ## Progress
 
@@ -95,4 +96,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Render Quality & 3D Viewer Foundation | 3/3 | Planning complete | - |
 | 2. Public Gallery & AR | 0/2 | Planning complete | - |
 | 3. Client Portal | 0/2 | Planning complete | - |
-| 4. Production & Deploy | 0/0 | Not started | - |
+| 4. Production & Deploy | 0/3 | Planning complete | - |
