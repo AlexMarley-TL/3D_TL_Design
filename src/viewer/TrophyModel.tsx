@@ -4,8 +4,6 @@ import * as THREE from 'three'
 import { METAL_PRESETS } from '../materials/metalPresets.ts'
 import type { MetalPreset } from '../types/index.ts'
 
-const REMOVE_NODES = ['studio', 'Backdrop', 'Backdrop right', 'BackdropLeft']
-
 interface TrophyModelProps {
   path: string
   preset: MetalPreset
@@ -14,16 +12,6 @@ interface TrophyModelProps {
 
 export function TrophyModel({ path, preset, useOriginalMaterials = false }: TrophyModelProps) {
   const { scene } = useGLTF(path)
-
-  useEffect(() => {
-    const toRemove: THREE.Object3D[] = []
-    scene.traverse((child) => {
-      if (REMOVE_NODES.includes(child.name)) {
-        toRemove.push(child)
-      }
-    })
-    toRemove.forEach((node) => node.parent?.remove(node))
-  }, [scene])
 
   const material = useMemo(
     () => useOriginalMaterials ? null : new THREE.MeshPhysicalMaterial({ ...METAL_PRESETS[preset] }),
