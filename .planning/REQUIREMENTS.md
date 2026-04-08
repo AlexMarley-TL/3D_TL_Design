@@ -40,11 +40,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Client Portal
 
-- [ ] **PORT-01**: Client accesses their project at `/project/:code` via QR code scan
-- [ ] **PORT-02**: Client enters a 4-digit numeric passcode to access project designs
-- [ ] **PORT-03**: Passcode validated client-side against SHA-256 hash stored in static data
-- [ ] **PORT-04**: Passcode persists in localStorage so client doesn't re-enter on return visits
-- [ ] **PORT-05**: Rate limiting: max 5 incorrect passcode attempts, then lockout message displayed
+- [x] **PORT-01**: Client accesses their project at `/project/:code` via QR code scan
+- [x] **PORT-02**: Client enters a 4-digit numeric passcode to access project designs
+- [x] **PORT-03**: Passcode validated client-side against SHA-256 hash stored in static data
+- [x] **PORT-04**: Passcode persists in localStorage so client doesn't re-enter on return visits
+- [x] **PORT-05**: Rate limiting: max 5 incorrect passcode attempts, then lockout message displayed
 - [ ] **PORT-06**: Project landing page shows design options as expandable cards (Option A, B, C)
 - [ ] **PORT-07**: Tapping a design option expands child iterations (v1, v2, v3) below it
 - [ ] **PORT-08**: Single-iteration options skip expansion and go directly to 3D viewer
@@ -140,11 +140,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SHOW-02 | Phase 2 | Complete |
 | SHOW-03 | Phase 2 | Complete |
 | SHOW-04 | Phase 2 | Complete |
-| PORT-01 | Phase 3 | Pending |
-| PORT-02 | Phase 3 | Pending |
-| PORT-03 | Phase 3 | Pending |
-| PORT-04 | Phase 3 | Pending |
-| PORT-05 | Phase 3 | Pending |
+| PORT-01 | Phase 3 | Complete |
+| PORT-02 | Phase 3 | Complete |
+| PORT-03 | Phase 3 | Complete |
+| PORT-04 | Phase 3 | Complete |
+| PORT-05 | Phase 3 | Complete |
 | PORT-06 | Phase 3 | Pending |
 | PORT-07 | Phase 3 | Pending |
 | PORT-08 | Phase 3 | Pending |

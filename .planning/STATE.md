@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Completed 02-02-PLAN.md
-last_updated: "2026-04-08T14:36:04.715Z"
+status: executing
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-04-08T14:50:35.953Z"
 last_activity: 2026-04-08
 progress:
   total_phases: 4
   completed_phases: 2
-  total_plans: 5
-  completed_plans: 5
+  total_plans: 7
+  completed_plans: 6
   percent: 33
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-26)
 
 **Core value:** Trophy renders must look convincingly real in-browser -- approaching Cinema 4D / Redshift quality with photorealistic polished metal reflections.
-**Current focus:** Phase 02 — public-gallery-ar
+**Current focus:** Phase 03 — client-portal
 
 ## Current Position
 
-Phase: 3
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 03 (client-portal) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-04-08
 
 Progress: [███░░░░░░░] 33%
@@ -56,6 +56,7 @@ Progress: [███░░░░░░░] 33%
 | Phase 01 P03 | 2min | 2 tasks | 4 files |
 | Phase 02-public-gallery-ar P01 | 3min | 2 tasks | 6 files |
 | Phase 02-public-gallery-ar P02 | 4min | 2 tasks | 6 files |
+| Phase 03-client-portal P01 | 3min | 3 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -77,6 +78,9 @@ Recent decisions affecting current work:
 - [Phase 02-01]: Gallery page clears Canvas model via onModelChange(null) and uses opaque background to cover empty Canvas
 - [Phase 02-public-gallery-ar]: Used declare module 'react' (not react/jsx-runtime) for model-viewer custom element types -- jsx-runtime augmentation overwrites IntrinsicElements
 - [Phase 02-public-gallery-ar]: model-viewer installed with --legacy-peer-deps due to npm semver strictness on three.js 0.x peer dep range
+- [Phase 03-client-portal]: Single passcode input field (not 4-box pattern) for MVP simplicity
+- [Phase 03-client-portal]: localStorage key pattern portal_auth_{code} for per-project auth persistence
+- [Phase 03-client-portal]: Portal page uses opaque background covering persistent Canvas (same pattern as gallery)
 
 ### Pending Todos
 
@@ -91,6 +95,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-08T14:30:35.145Z
-Stopped at: Completed 02-02-PLAN.md
+Last session: 2026-04-08T14:50:35.942Z
+Stopped at: Completed 03-01-PLAN.md
 Resume file: None

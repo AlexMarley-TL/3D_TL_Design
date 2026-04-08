@@ -67,7 +67,7 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 03-01-PLAN.md -- Passcode authentication: SHA-256 utility, sample project data, PasscodeEntry component, ClientPortal page with passcode gate, routing
+- [x] 03-01-PLAN.md -- Passcode authentication: SHA-256 utility, sample project data, PasscodeEntry component, ClientPortal page with passcode gate, routing
 - [ ] 03-02-PLAN.md -- Design option browsing: expandable DesignOption cards with child iterations, IterationDetail 3D viewer with AR
 
 ### Phase 4: Production & Deploy
