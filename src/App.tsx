@@ -1,7 +1,8 @@
 import { useState, useCallback } from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router'
+import { BrowserRouter, Routes, Route } from 'react-router'
 import { TrophyViewer } from './viewer/TrophyViewer.tsx'
 import { TrophyDetail } from './pages/TrophyDetail.tsx'
+import { PublicGallery } from './pages/PublicGallery.tsx'
 import { SHOWCASE_TROPHIES } from './data/showcase.ts'
 import type { MetalPreset } from './types/index.ts'
 
@@ -22,7 +23,7 @@ function App() {
 
         <div className="dom-overlay">
           <Routes>
-            <Route path="/" element={<Navigate to="/trophy/test-trophy" replace />} />
+            <Route path="/" element={<PublicGallery onModelChange={handleModelChange} />} />
             <Route
               path="/trophy/:slug"
               element={

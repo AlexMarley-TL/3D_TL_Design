@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useParams } from 'react-router'
+import { useParams, Link } from 'react-router'
 import { SHOWCASE_TROPHIES } from '../data/showcase.ts'
 import { TrophyInfo } from '../components/TrophyInfo.tsx'
 import type { MetalPreset } from '../types/index.ts'
@@ -27,5 +27,10 @@ export function TrophyDetail({ onModelChange, onPresetChange, onOriginalMaterial
     return <div className="trophy-not-found">Trophy not found</div>
   }
 
-  return <TrophyInfo trophy={trophy} />
+  return (
+    <>
+      <Link to="/" className="back-link">&larr; Back to Gallery</Link>
+      <TrophyInfo trophy={trophy} />
+    </>
+  )
 }
