@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import { METAL_PRESETS } from '../materials/metalPresets.ts'
 import type { MetalPreset } from '../types/index.ts'
 
-const SKIP_NODES = ['Backdrop', 'Backdrop right', 'BackdropLeft', 'Render', 'studio']
+const SKIP_NODES = ['Backdrop', 'Backdrop right', 'BackdropLeft']
 
 interface TrophyModelProps {
   path: string
