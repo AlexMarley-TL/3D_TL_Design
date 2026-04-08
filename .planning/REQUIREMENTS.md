@@ -63,7 +63,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **UI-03**: Mobile-first responsive design -- primary use case is phone
 - [x] **UI-04**: Loading spinner or skeleton shown during 3D model loading (React Suspense)
 - [ ] **UI-05**: Back navigation from 3D viewer to gallery or project landing page
-- [ ] **UI-06**: Trophy info panel showing name, dimensions, and materials on the viewer page
+- [x] **UI-06**: Trophy info panel showing name, dimensions, and materials on the viewer page
 
 ### Infrastructure
 
@@ -157,7 +157,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UI-03 | Phase 2 | Pending |
 | UI-04 | Phase 1 | Complete |
 | UI-05 | Phase 2 | Pending |
-| UI-06 | Phase 1 | Pending |
+| UI-06 | Phase 1 | Complete |
 | INFRA-01 | Phase 1 | Complete |
 | INFRA-02 | Phase 4 | Pending |
 | INFRA-03 | Phase 4 | Pending |
