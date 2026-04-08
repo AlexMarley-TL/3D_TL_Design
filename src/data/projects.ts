@@ -36,7 +36,7 @@ export const CLIENT_PROJECTS: ClientProject[] = [
         name: 'Option B — Classical',
         iterations: [
           {
-            slug: 'v1',
+            slug: 'b-v1',
             label: 'Initial concept',
             modelPath: '/models/SheenChair.glb',
             thumbnailPath: '/images/placeholder.jpg',
