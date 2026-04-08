@@ -33,10 +33,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Public Showcase
 
-- [ ] **SHOW-01**: Public gallery at `/` displays a grid of curated trophy cards with thumbnails
-- [ ] **SHOW-02**: User can click a trophy card to open the full 3D viewer at `/trophy/:slug`
-- [ ] **SHOW-03**: Public gallery requires no authentication
-- [ ] **SHOW-04**: Each public trophy has a shareable unique URL
+- [x] **SHOW-01**: Public gallery at `/` displays a grid of curated trophy cards with thumbnails
+- [x] **SHOW-02**: User can click a trophy card to open the full 3D viewer at `/trophy/:slug`
+- [x] **SHOW-03**: Public gallery requires no authentication
+- [x] **SHOW-04**: Each public trophy has a shareable unique URL
 
 ### Client Portal
 
@@ -58,11 +58,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### UI & Theme
 
-- [ ] **UI-01**: Dark luxury theme with CSS custom properties matching Thomas Lyte brand (backgrounds #0d0d0f/#161619/#1e1e22, gold accent #c9a962)
-- [ ] **UI-02**: Playfair Display for headings, Inter for body text (Google Fonts)
-- [ ] **UI-03**: Mobile-first responsive design -- primary use case is phone
+- [x] **UI-01**: Dark luxury theme with CSS custom properties matching Thomas Lyte brand (backgrounds #0d0d0f/#161619/#1e1e22, gold accent #c9a962)
+- [x] **UI-02**: Playfair Display for headings, Inter for body text (Google Fonts)
+- [x] **UI-03**: Mobile-first responsive design -- primary use case is phone
 - [x] **UI-04**: Loading spinner or skeleton shown during 3D model loading (React Suspense)
-- [ ] **UI-05**: Back navigation from 3D viewer to gallery or project landing page
+- [x] **UI-05**: Back navigation from 3D viewer to gallery or project landing page
 - [x] **UI-06**: Trophy info panel showing name, dimensions, and materials on the viewer page
 
 ### Infrastructure
@@ -76,7 +76,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **QR-01**: Each client project has a generated QR code encoding the project URL
 - [ ] **QR-02**: QR code exportable as PNG/SVG for embedding in PDF decks
-- [ ] **QR-03**: Each trophy and project iteration has a unique shareable URL
+- [x] **QR-03**: Each trophy and project iteration has a unique shareable URL
 
 ## v2 Requirements
 
@@ -136,10 +136,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | AR-02 | Phase 2 | Pending |
 | AR-03 | Phase 2 | Pending |
 | AR-04 | Phase 2 | Pending |
-| SHOW-01 | Phase 2 | Pending |
-| SHOW-02 | Phase 2 | Pending |
-| SHOW-03 | Phase 2 | Pending |
-| SHOW-04 | Phase 2 | Pending |
+| SHOW-01 | Phase 2 | Complete |
+| SHOW-02 | Phase 2 | Complete |
+| SHOW-03 | Phase 2 | Complete |
+| SHOW-04 | Phase 2 | Complete |
 | PORT-01 | Phase 3 | Pending |
 | PORT-02 | Phase 3 | Pending |
 | PORT-03 | Phase 3 | Pending |
@@ -152,11 +152,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PIPE-01 | Phase 1 | Complete |
 | PIPE-02 | Phase 1 | Complete |
 | PIPE-03 | Phase 4 | Pending |
-| UI-01 | Phase 2 | Pending |
-| UI-02 | Phase 2 | Pending |
-| UI-03 | Phase 2 | Pending |
+| UI-01 | Phase 2 | Complete |
+| UI-02 | Phase 2 | Complete |
+| UI-03 | Phase 2 | Complete |
 | UI-04 | Phase 1 | Complete |
-| UI-05 | Phase 2 | Pending |
+| UI-05 | Phase 2 | Complete |
 | UI-06 | Phase 1 | Complete |
 | INFRA-01 | Phase 1 | Complete |
 | INFRA-02 | Phase 4 | Pending |
@@ -164,7 +164,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-04 | Phase 4 | Pending |
 | QR-01 | Phase 4 | Pending |
 | QR-02 | Phase 4 | Pending |
-| QR-03 | Phase 2 | Pending |
+| QR-03 | Phase 2 | Complete |
 
 **Coverage:**
 - v1 requirements: 43 total

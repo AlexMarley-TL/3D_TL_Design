@@ -50,7 +50,7 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 02-01-PLAN.md -- Public gallery page with responsive trophy cards, Google Fonts, dark luxury theme, routing and back navigation
+- [x] 02-01-PLAN.md -- Public gallery page with responsive trophy cards, Google Fonts, dark luxury theme, routing and back navigation
 - [ ] 02-02-PLAN.md -- Cross-platform AR via model-viewer (iPhone Quick Look + Android WebXR), phone verification checkpoint
 
 ### Phase 3: Client Portal
