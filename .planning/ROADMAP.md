@@ -63,12 +63,12 @@ Plans:
   3. Client returns to the same project URL days later and is not asked for the passcode again (localStorage persistence)
   4. After 5 incorrect passcode attempts, a lockout message is displayed and no further attempts are accepted
   5. Tapping an iteration opens the full 3D viewer with AR at `/project/:code/:slug`
-**Plans**: TBD
+**Plans**: 2 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md -- Passcode authentication: SHA-256 utility, sample project data, PasscodeEntry component, ClientPortal page with passcode gate, routing
+- [ ] 03-02-PLAN.md -- Design option browsing: expandable DesignOption cards with child iterations, IterationDetail 3D viewer with AR
 
 ### Phase 4: Production & Deploy
 **Goal**: The complete application is production-optimized, generates QR codes for PDF decks, and is live on Vercel for real client use
@@ -94,5 +94,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Render Quality & 3D Viewer Foundation | 3/3 | Planning complete | - |
 | 2. Public Gallery & AR | 0/2 | Planning complete | - |
-| 3. Client Portal | 0/0 | Not started | - |
+| 3. Client Portal | 0/2 | Planning complete | - |
 | 4. Production & Deploy | 0/0 | Not started | - |
