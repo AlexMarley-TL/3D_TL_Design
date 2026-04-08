@@ -19,10 +19,14 @@ export function TrophyModel({ path, preset, useOriginalMaterials = false }: Trop
   )
 
   useEffect(() => {
-    if (useOriginalMaterials || !material) return
     scene.traverse((child) => {
       if ((child as THREE.Mesh).isMesh) {
-        (child as THREE.Mesh).material = material
+        const mesh = child as THREE.Mesh
+        if (!useOriginalMaterials && material) {
+          mesh.material = material
+        }
+        const mat = mesh.material as THREE.Material
+        if (mat) mat.side = THREE.DoubleSide
       }
     })
   }, [scene, material, useOriginalMaterials])
