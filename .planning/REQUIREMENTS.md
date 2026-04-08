@@ -45,10 +45,10 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **PORT-03**: Passcode validated client-side against SHA-256 hash stored in static data
 - [x] **PORT-04**: Passcode persists in localStorage so client doesn't re-enter on return visits
 - [x] **PORT-05**: Rate limiting: max 5 incorrect passcode attempts, then lockout message displayed
-- [ ] **PORT-06**: Project landing page shows design options as expandable cards (Option A, B, C)
-- [ ] **PORT-07**: Tapping a design option expands child iterations (v1, v2, v3) below it
-- [ ] **PORT-08**: Single-iteration options skip expansion and go directly to 3D viewer
-- [ ] **PORT-09**: Each iteration opens the full 3D viewer + AR at `/project/:code/:slug`
+- [x] **PORT-06**: Project landing page shows design options as expandable cards (Option A, B, C)
+- [x] **PORT-07**: Tapping a design option expands child iterations (v1, v2, v3) below it
+- [x] **PORT-08**: Single-iteration options skip expansion and go directly to 3D viewer
+- [x] **PORT-09**: Each iteration opens the full 3D viewer + AR at `/project/:code/:slug`
 
 ### Content Pipeline
 
@@ -145,10 +145,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PORT-03 | Phase 3 | Complete |
 | PORT-04 | Phase 3 | Complete |
 | PORT-05 | Phase 3 | Complete |
-| PORT-06 | Phase 3 | Pending |
-| PORT-07 | Phase 3 | Pending |
-| PORT-08 | Phase 3 | Pending |
-| PORT-09 | Phase 3 | Pending |
+| PORT-06 | Phase 3 | Complete |
+| PORT-07 | Phase 3 | Complete |
+| PORT-08 | Phase 3 | Complete |
+| PORT-09 | Phase 3 | Complete |
 | PIPE-01 | Phase 1 | Complete |
 | PIPE-02 | Phase 1 | Complete |
 | PIPE-03 | Phase 4 | Pending |
