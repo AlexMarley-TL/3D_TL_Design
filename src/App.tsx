@@ -4,6 +4,7 @@ import { TrophyViewer } from './viewer/TrophyViewer.tsx'
 import { TrophyDetail } from './pages/TrophyDetail.tsx'
 import { PublicGallery } from './pages/PublicGallery.tsx'
 import { ClientPortal } from './pages/ClientPortal.tsx'
+import { IterationDetail } from './pages/IterationDetail.tsx'
 import { SHOWCASE_TROPHIES } from './data/showcase.ts'
 import type { MetalPreset } from './types/index.ts'
 
@@ -29,6 +30,16 @@ function App() {
               path="/trophy/:slug"
               element={
                 <TrophyDetail
+                  onModelChange={handleModelChange}
+                  onPresetChange={handlePresetChange}
+                  onOriginalMaterialsChange={handleOriginalMaterialsChange}
+                />
+              }
+            />
+            <Route
+              path="/project/:code/:slug"
+              element={
+                <IterationDetail
                   onModelChange={handleModelChange}
                   onPresetChange={handlePresetChange}
                   onOriginalMaterialsChange={handleOriginalMaterialsChange}
