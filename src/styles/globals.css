@@ -304,3 +304,165 @@ body,
 .ar-button:active {
   transform: translateY(0);
 }
+
+/* Passcode Entry */
+.passcode-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-primary);
+}
+
+.passcode-card {
+  width: 100%;
+  max-width: 360px;
+  padding: 40px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+.passcode-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.passcode-client-name {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.passcode-project-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin-top: 8px;
+}
+
+.passcode-input {
+  display: block;
+  width: 100%;
+  height: 56px;
+  font-family: var(--font-body);
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.5em;
+  background: var(--bg-tertiary);
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  transition: border-color 0.2s ease;
+}
+
+.passcode-input:focus {
+  border-color: var(--color-gold);
+  outline: none;
+}
+
+.passcode-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.4;
+  letter-spacing: 0.5em;
+}
+
+.passcode-submit {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: var(--color-gold);
+  color: var(--bg-primary);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.passcode-submit:hover {
+  background: var(--color-gold-light);
+  transform: translateY(-2px);
+}
+
+.passcode-submit:active {
+  transform: translateY(0);
+}
+
+.passcode-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.passcode-error {
+  color: #ff4444;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.passcode-lockout {
+  text-align: center;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  padding: 24px 0;
+}
+
+/* Client Portal */
+.portal-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--bg-primary);
+  padding-bottom: 40px;
+}
+
+.portal-header {
+  text-align: center;
+  padding: 48px 24px 32px;
+}
+
+.portal-client-name {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.portal-project-name {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin-top: 8px;
+}
+
+.portal-option-count {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+.portal-placeholder {
+  text-align: center;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  padding: 48px 24px;
+}
