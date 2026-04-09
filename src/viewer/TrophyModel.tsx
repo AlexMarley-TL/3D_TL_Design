@@ -35,5 +35,5 @@ export function TrophyModel({ path, preset, useOriginalMaterials = false }: Trop
     return () => { material?.dispose() }
   }, [material])
 
-  return <primitive object={scene} scale={[-1, 1, 1]} />
+  return <primitive object={scene} />
 }
