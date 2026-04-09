@@ -18,7 +18,7 @@ export function TrophyViewer({ modelPath, metalPreset, useOriginalMaterials }: T
         flat
         dpr={[1, 2]}
         gl={{ antialias: true }}
-        camera={{ position: [0, 1, 4], fov: 45 }}
+        camera={{ position: [0, 1, -4], fov: 45 }}
       >
         <Suspense fallback={null}>
           {modelPath && (
