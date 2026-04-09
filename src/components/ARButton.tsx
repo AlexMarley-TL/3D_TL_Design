@@ -44,13 +44,11 @@ export function ARButton({ modelPath, usdzPath }: ARButtonProps) {
         src={modelPath}
         ios-src={usdzPath}
         ar
-        ar-modes="webxr scene-viewer quick-look"
+        ar-modes="scene-viewer webxr quick-look"
         ar-scale="auto"
-        auto-rotate
-        auto-rotate-delay="0"
-        rotation-per-second="30deg"
+        loading="eager"
         camera-orbit="180deg 75deg auto"
-        style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}
+        style={{ position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', opacity: 0 }}
       />
       {arAvailable && (
         <button className="ar-button" onClick={handleARClick}>
