@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "compress-models": "npx tsx scripts/compress-models.ts",
     "generate-qr": "npx tsx scripts/generate-qr-codes.ts",
-    "generate-showcase": "node scripts/generate-showcase.cjs"
+    "generate-showcase": "node scripts/generate-showcase.cjs",
+    "add-project": "node scripts/add-project.cjs"
   },
   "dependencies": {
     "@google/model-viewer": "^4.2.0",
