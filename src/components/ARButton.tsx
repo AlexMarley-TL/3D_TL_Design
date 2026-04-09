@@ -46,6 +46,10 @@ export function ARButton({ modelPath, usdzPath }: ARButtonProps) {
         ar
         ar-modes="webxr scene-viewer quick-look"
         ar-scale="auto"
+        auto-rotate
+        auto-rotate-delay="0"
+        rotation-per-second="30deg"
+        camera-orbit="180deg 75deg auto"
         style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}
       />
       {arAvailable && (
