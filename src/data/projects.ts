@@ -14,8 +14,8 @@ export const CLIENT_PROJECTS: ClientProject[] = [
           {
             slug: 'with-hammer',
             label: 'With hammer plinth',
-            modelPath: '/models/Henley-Design-D-Round3.glb',
-            thumbnailPath: '/images/Henley-Design-D-Round3.jpg',
+            modelPath: '/clients/henley-regatta/Design-D-Round3.glb',
+            thumbnailPath: '/clients/henley-regatta/Design-D-Round3.jpg',
             dimensions: { heightMm: 400, widthMm: 300, depthMm: 300 },
             materials: { primary: 'polishedSilver' },
             dateAdded: '2026-04-09',
@@ -23,8 +23,8 @@ export const CLIENT_PROJECTS: ClientProject[] = [
           {
             slug: 'without-hammer',
             label: 'Without hammer plinth',
-            modelPath: '/models/Henley-Design-D-Round3-WO-Hammer.glb',
-            thumbnailPath: '/images/Henley-Design-D-Round3-WO-Hammer.jpg',
+            modelPath: '/clients/henley-regatta/Design-D-Round3-WO-Hammer.glb',
+            thumbnailPath: '/clients/henley-regatta/Design-D-Round3-WO-Hammer.jpg',
             dimensions: { heightMm: 400, widthMm: 300, depthMm: 300 },
             materials: { primary: 'polishedSilver' },
             dateAdded: '2026-04-09',
