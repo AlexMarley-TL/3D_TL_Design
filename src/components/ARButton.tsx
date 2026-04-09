@@ -13,7 +13,7 @@ export function ARButton({ modelPath, usdzPath }: ARButtonProps) {
   useEffect(() => {
     import('@google/model-viewer')
       .then(() => setModelViewerLoaded(true))
-      .catch(() => {})
+      .catch((err) => console.error('model-viewer import failed:', err))
   }, [])
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export function ARButton({ modelPath, usdzPath }: ARButtonProps) {
     }
 
     el.addEventListener('load', checkAR)
-    checkAR()
+    el.addEventListener('error', (e: any) => console.error('model-viewer error:', e.detail))
     return () => el.removeEventListener('load', checkAR)
   }, [modelPath, modelViewerLoaded])
 
