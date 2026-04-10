@@ -2,15 +2,6 @@ import type { PublicTrophy } from '../types/index.ts'
 
 export const SHOWCASE_TROPHIES: PublicTrophy[] = [
   {
-    slug: 'sheen-chair',
-    name: 'Development Test Model',
-    description: 'Gold chair used for rendering validation during development.',
-    modelPath: '/gallery/SheenChair.glb',
-    thumbnailPath: '/gallery/SheenChair.jpg',
-    dimensions: { heightMm: 300, widthMm: 200, depthMm: 200 },
-    materials: { primary: 'polishedGold' },
-  },
-  {
     slug: 'uefa-womens-euro-silver',
     name: 'UEFA Women\'s European Championship Trophy — Silver',
     description: 'The iconic trophy awarded to the winners of the UEFA Women\'s European Championship.',
