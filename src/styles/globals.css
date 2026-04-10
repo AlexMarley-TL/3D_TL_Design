@@ -466,6 +466,28 @@ body,
   padding: 0 16px;
 }
 
+.portal-public-gallery {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  padding: 40px 16px;
+  border-top: 1px solid var(--border-subtle, rgba(255,255,255,0.1));
+}
+
+.portal-gallery-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--color-gold);
+  text-align: center;
+  margin: 0 0 8px;
+}
+
+.portal-gallery-subtitle {
+  font-family: var(--font-body);
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 0 0 32px;
+}
+
 .design-option {
   background: var(--bg-secondary);
   border-radius: var(--radius);

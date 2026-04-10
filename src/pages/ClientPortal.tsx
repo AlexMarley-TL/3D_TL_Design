@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import { getProjectByCode } from '../data/projects.ts'
+import { SHOWCASE_TROPHIES } from '../data/showcase.ts'
 import { PasscodeEntry } from '../components/PasscodeEntry.tsx'
 import { DesignOption } from '../components/DesignOption.tsx'
+import { TrophyCard } from '../components/TrophyCard.tsx'
 
 interface ClientPortalProps {
   onModelChange: (path: string | null) => void
@@ -57,6 +59,16 @@ export function ClientPortal({ onModelChange }: ClientPortalProps) {
           <DesignOption key={option.slug} option={option} projectCode={project.code} />
         ))}
       </div>
+
+      <section className="portal-public-gallery">
+        <h2 className="portal-gallery-title">Explore Our Public Gallery</h2>
+        <p className="portal-gallery-subtitle">Discover other Thomas Lyte trophies</p>
+        <div className="gallery-grid">
+          {SHOWCASE_TROPHIES.map((trophy) => (
+            <TrophyCard key={trophy.slug} trophy={trophy} />
+          ))}
+        </div>
+      </section>
     </div>
   )
 }

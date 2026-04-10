@@ -8,14 +8,14 @@ export const CLIENT_PROJECTS: ClientProject[] = [
     projectName: 'Henley Plinth Design D',
     designOptions: [
       {
-        slug: 'design-d-round3',
+        slug: 'round-3',
         name: 'Design D — Round 3',
         iterations: [
           {
             slug: 'with-hammer',
             label: 'With hammer plinth',
-            modelPath: '/clients/henley-regatta/Design-D-Round3.glb',
-            thumbnailPath: '/clients/henley-regatta/Design-D-Round3.jpg',
+            modelPath: '/clients/henley-regatta/round-3/Design-D.glb',
+            thumbnailPath: '/clients/henley-regatta/round-3/Design-D.jpg',
             dimensions: { heightMm: 400, widthMm: 300, depthMm: 300 },
             materials: { primary: 'polishedSilver' },
             dateAdded: '2026-04-09',
@@ -23,11 +23,35 @@ export const CLIENT_PROJECTS: ClientProject[] = [
           {
             slug: 'without-hammer',
             label: 'Without hammer plinth',
-            modelPath: '/clients/henley-regatta/Design-D-Round3-WO-Hammer.glb',
-            thumbnailPath: '/clients/henley-regatta/Design-D-Round3-WO-Hammer.jpg',
+            modelPath: '/clients/henley-regatta/round-3/Design-D-WO-Hammer.glb',
+            thumbnailPath: '/clients/henley-regatta/round-3/Design-D-WO-Hammer.jpg',
             dimensions: { heightMm: 400, widthMm: 300, depthMm: 300 },
             materials: { primary: 'polishedSilver' },
             dateAdded: '2026-04-09',
+          },
+        ],
+      },
+      {
+        slug: 'round-4',
+        name: 'Design D — Round 4',
+        iterations: [
+          {
+            slug: 'with-hammer',
+            label: 'With hammer plinth',
+            modelPath: '/clients/henley-regatta/round-4/Design-D.glb',
+            thumbnailPath: '/clients/henley-regatta/round-4/Design-D.jpg',
+            dimensions: { heightMm: 400, widthMm: 300, depthMm: 300 },
+            materials: { primary: 'polishedSilver' },
+            dateAdded: '2026-04-10',
+          },
+          {
+            slug: 'without-hammer',
+            label: 'Without hammer plinth',
+            modelPath: '/clients/henley-regatta/round-4/Design-D-WO-Hammer.glb',
+            thumbnailPath: '/clients/henley-regatta/round-4/Design-D-WO-Hammer.jpg',
+            dimensions: { heightMm: 400, widthMm: 300, depthMm: 300 },
+            materials: { primary: 'polishedSilver' },
+            dateAdded: '2026-04-10',
           },
         ],
       },
